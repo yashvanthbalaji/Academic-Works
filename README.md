@@ -57,7 +57,7 @@ This repository is intended for **academic and educational purposes** only. Sugg
 
 ## 👨‍🎓 Author
 
-**Yashvanth Balaji**
+**Balaji A**
 Engineering Student | Academic Enthusiast
 
 ---
