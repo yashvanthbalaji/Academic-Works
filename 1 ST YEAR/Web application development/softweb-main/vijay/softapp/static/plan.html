@@ -1,0 +1,192 @@
+<html>
+<head>
+    <title>Plans</title>
+    <style>
+        
+        body {
+          font-family: 'Times New Roman', Times, serif, sans-serif;
+          margin: 0;
+          padding: 0;
+          color: white;
+        }
+    
+        header {
+          background-color: rgb(45, 246, 0);
+          color: #fff;
+          padding: 10px 0;
+        }
+    
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+        }
+    
+        nav .container {
+          display: flex;
+          align-items: center;
+        }
+    
+        nav img {
+          margin-right: 10px;
+        }
+    
+        nav h1 {
+          margin: 0;
+        }
+    
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+    
+        nav ul li {
+          display: inline;
+        }
+    
+        nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          margin: 0 15px;
+        }
+    
+        nav ul li a:hover {
+          color: #ffd700; 
+        }
+    
+        section {
+          padding: 50px;
+        }
+    
+        footer {
+          background-color:rgb(24, 235, 5);
+          color:white;
+          text-align: center;
+          padding: 5px 0;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+        .container1 {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      text-align: center;
+      margin-bottom: 50px;
+      flex-basis: calc(25% - 20px); 
+      border: 5px solid pink; 
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: 200px; 
+      width: 200px; 
+      object-fit: cover; 
+      margin-bottom: 10px;
+    }
+
+    .product-info {
+      margin-top: 20px;
+    }
+
+    .product-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      margin-top: 10px;
+      color:rgb(199, 215, 15)
+    }
+    .buy {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+      </style>
+</head>
+<body bgcolor="red" background="7.jpeg" style="background-size: cover;"> 
+    <header>
+        <nav>
+          <div class="container">
+            <img src="2.jpg" height="50px" width="80px">
+            <h1>LETS MED</h1>
+          </div>
+          <ul>
+            <li><a href="website.html">Home</a></li>
+            <li><a href="plan.html">Plans</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1 align="center">Plans</h1>
+      <div class="container1">
+        <div class="product">
+          <img src="3.jpeg" alt="Product 1">
+          <div class="product-info">
+            <div class="product-name"> Group Therapy </div>
+            <div class="product-description">Facilitate group therapy sessions focused on common issues or themes, such as stress management, mindfulness, interpersonal skills, or coping with grief, to foster peer support and connection.  <b>Weekly once</b></div>
+            <div class="product-price">Rs.2000</div>
+            <button class="buy">Enroll Now</button>
+
+          </div>
+        </div>
+        <div class="product">
+          <img src="4.jpeg" alt="Product 2">
+          <div class="product-info">
+            <div class="product-name">Individual Therapy </div>
+            <div class="product-description"> Provide one-on-one counseling sessions with licensed therapists or psychologists to address specific mental health concerns, such as anxiety, depression, trauma, or substance abuse. <b>Weekly twice</b></div>
+            <div class="product-price">Rs.2500</div>
+            <button class="buy">Enroll Now</button>
+
+          </div>
+        </div>
+    
+        <div class="product">
+          <img src="5.jpeg" alt="Product 3">
+          <div class="product-info">
+            <div class="product-name">Family Counseling</div>
+            <div class="product-description">Offer family therapy sessions to address relational dynamics, communication challenges, and family conflicts that may impact the mental health and well-being of individuals. <b>Weekly twice</b></div>
+            <div class="product-price">Rs.3500</div>
+            <button class="buy">Enroll Now</button>
+
+          </div>
+        </div>
+    
+        <div class="product">
+          <img src="6.jpeg" alt="Product 4">
+          <div class="product-info">
+            <div class="product-name">Specialized Treatment</div>
+            <div class="product-description">Develop specialized treatment tracks or programs for specific populations or conditions, such as youth mental health, LGBTQ+ affirming therapy, trauma recovery, or addiction recovery. <b>Weekends</b></div>
+            <div class="product-price">Rs.5000</div>
+            <button class="buy">Enroll Now</button>
+
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; LETS MED All rights reserved.</p>
+      </footer>
+</body>
+</html>

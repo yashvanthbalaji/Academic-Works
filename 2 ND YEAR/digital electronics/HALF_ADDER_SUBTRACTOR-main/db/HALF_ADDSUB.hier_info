@@ -1,0 +1,9 @@
+|HALF_ADDSUB
+a => ~NO_FANOUT~
+b => ~NO_FANOUT~
+sum <= <GND>
+carry <= <GND>
+D <= <GND>
+Bo <= <GND>
+
+

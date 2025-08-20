@@ -1,0 +1,19 @@
+|ENCODER8TO3
+a0 <= g1.DB_MAX_OUTPUT_PORT_TYPE
+a1 <= g2.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= g3.DB_MAX_OUTPUT_PORT_TYPE
+d0 => ~NO_FANOUT~
+d1 => g1.IN0
+d2 => g2.IN0
+d3 => g1.IN1
+d3 => g2.IN1
+d4 => g3.IN0
+d5 => g1.IN2
+d5 => g3.IN1
+d6 => g2.IN2
+d6 => g3.IN2
+d7 => g1.IN3
+d7 => g2.IN3
+d7 => g3.IN3
+
+

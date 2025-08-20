@@ -1,0 +1,23 @@
+|GATES_TT
+a => comb.IN0
+a => comb.IN0
+a => comb.IN0
+a => comb.IN0
+a => comb.IN0
+a => comb.IN0
+a => notgate.DATAIN
+b => comb.IN1
+b => comb.IN1
+b => comb.IN1
+b => comb.IN1
+b => comb.IN1
+b => comb.IN1
+andgate <= comb.DB_MAX_OUTPUT_PORT_TYPE
+orgate <= comb.DB_MAX_OUTPUT_PORT_TYPE
+notgate <= a.DB_MAX_OUTPUT_PORT_TYPE
+nandgate <= comb.DB_MAX_OUTPUT_PORT_TYPE
+norgate <= comb.DB_MAX_OUTPUT_PORT_TYPE
+xorgate <= comb.DB_MAX_OUTPUT_PORT_TYPE
+xnorgate <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

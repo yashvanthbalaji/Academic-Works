@@ -1,0 +1,10 @@
+|FULL_addsub
+a => ~NO_FANOUT~
+b => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+sum <= <GND>
+carry <= <GND>
+BO <= <GND>
+DIFF <= <GND>
+
+

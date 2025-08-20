@@ -1,0 +1,115 @@
+$comment
+	File created using the following command:
+		vcd file TFLIPFLOPPOSEDGE.msim.vcd -direction
+$end
+$date
+	Thu Jan 25 11:53:12 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module TFLIPFLOPPOSEDGE_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 1 # t $end
+$var wire 1 $ q $end
+$var wire 1 % q_bar $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - clk~combout $end
+$var wire 1 . t~combout $end
+$var wire 1 / rst_n~combout $end
+$var wire 1 0 q~0_combout $end
+$var wire 1 1 q~reg0_regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+$end
+#10000
+1#
+1.
+0&
+#20000
+1!
+1-
+1&
+#30000
+1"
+0#
+1/
+0.
+0&
+#40000
+0!
+0-
+1&
+#60000
+1!
+1-
+0&
+#80000
+1#
+0!
+1.
+0-
+1&
+10
+#100000
+1!
+1-
+0&
+11
+00
+1$
+0%
+#110000
+0#
+0.
+1&
+10
+#120000
+0!
+0-
+0&
+#140000
+1!
+1-
+1&
+#160000
+0!
+0-
+0&
+#190000
+0"
+0/
+1&
+00
+#200000

@@ -1,0 +1,769 @@
+TimeQuest Timing Analyzer report for RIPPLECOUNTER
+Mon Jan 29 11:32:24 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'T_FF:tff2|D_FF:dff0|q'
+ 12. Slow Model Setup: 'T_FF:tffo|D_FF:dff0|q'
+ 13. Slow Model Setup: 'T_FF:tff1|D_FF:dff0|q'
+ 14. Slow Model Setup: 'clk'
+ 15. Slow Model Hold: 'clk'
+ 16. Slow Model Hold: 'T_FF:tff1|D_FF:dff0|q'
+ 17. Slow Model Hold: 'T_FF:tffo|D_FF:dff0|q'
+ 18. Slow Model Hold: 'T_FF:tff2|D_FF:dff0|q'
+ 19. Slow Model Minimum Pulse Width: 'clk'
+ 20. Slow Model Minimum Pulse Width: 'T_FF:tff1|D_FF:dff0|q'
+ 21. Slow Model Minimum Pulse Width: 'T_FF:tff2|D_FF:dff0|q'
+ 22. Slow Model Minimum Pulse Width: 'T_FF:tffo|D_FF:dff0|q'
+ 23. Clock to Output Times
+ 24. Minimum Clock to Output Times
+ 25. Fast Model Setup Summary
+ 26. Fast Model Hold Summary
+ 27. Fast Model Recovery Summary
+ 28. Fast Model Removal Summary
+ 29. Fast Model Minimum Pulse Width Summary
+ 30. Fast Model Setup: 'T_FF:tff2|D_FF:dff0|q'
+ 31. Fast Model Setup: 'T_FF:tffo|D_FF:dff0|q'
+ 32. Fast Model Setup: 'T_FF:tff1|D_FF:dff0|q'
+ 33. Fast Model Setup: 'clk'
+ 34. Fast Model Hold: 'clk'
+ 35. Fast Model Hold: 'T_FF:tff1|D_FF:dff0|q'
+ 36. Fast Model Hold: 'T_FF:tffo|D_FF:dff0|q'
+ 37. Fast Model Hold: 'T_FF:tff2|D_FF:dff0|q'
+ 38. Fast Model Minimum Pulse Width: 'clk'
+ 39. Fast Model Minimum Pulse Width: 'T_FF:tff1|D_FF:dff0|q'
+ 40. Fast Model Minimum Pulse Width: 'T_FF:tff2|D_FF:dff0|q'
+ 41. Fast Model Minimum Pulse Width: 'T_FF:tffo|D_FF:dff0|q'
+ 42. Clock to Output Times
+ 43. Minimum Clock to Output Times
+ 44. Multicorner Timing Analysis Summary
+ 45. Clock to Output Times
+ 46. Minimum Clock to Output Times
+ 47. Setup Transfers
+ 48. Hold Transfers
+ 49. Report TCCS
+ 50. Report RSKM
+ 51. Unconstrained Paths
+ 52. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; RIPPLECOUNTER                                                     ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C5T144C6                                                       ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                       ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; Clock Name            ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                   ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+; clk                   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                   ;
+; T_FF:tff1|D_FF:dff0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { T_FF:tff1|D_FF:dff0|q } ;
+; T_FF:tff2|D_FF:dff0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { T_FF:tff2|D_FF:dff0|q } ;
+; T_FF:tffo|D_FF:dff0|q ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { T_FF:tffo|D_FF:dff0|q } ;
++-----------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                      ;
++-------------+-----------------+-----------------------+------------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name            ; Note                                                 ;
++-------------+-----------------+-----------------------+------------------------------------------------------+
+; 1610.31 MHz ; 500.0 MHz       ; T_FF:tff2|D_FF:dff0|q ; limit due to low minimum pulse width violation (tcl) ;
++-------------+-----------------+-----------------------+------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------------------+
+; Slow Model Setup Summary                      ;
++-----------------------+-------+---------------+
+; Clock                 ; Slack ; End Point TNS ;
++-----------------------+-------+---------------+
+; T_FF:tff2|D_FF:dff0|q ; 0.379 ; 0.000         ;
+; T_FF:tffo|D_FF:dff0|q ; 0.958 ; 0.000         ;
+; T_FF:tff1|D_FF:dff0|q ; 2.253 ; 0.000         ;
+; clk                   ; 2.485 ; 0.000         ;
++-----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Slow Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -2.215 ; -2.215        ;
+; T_FF:tff1|D_FF:dff0|q ; -1.983 ; -1.983        ;
+; T_FF:tffo|D_FF:dff0|q ; -0.688 ; -0.688        ;
+; T_FF:tff2|D_FF:dff0|q ; 0.391  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -1.222 ; -2.222        ;
+; T_FF:tff1|D_FF:dff0|q ; -0.500 ; -1.000        ;
+; T_FF:tff2|D_FF:dff0|q ; -0.500 ; -1.000        ;
+; T_FF:tffo|D_FF:dff0|q ; -0.500 ; -1.000        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'T_FF:tff2|D_FF:dff0|q'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.379 ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; 1.000        ; 0.000      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'T_FF:tffo|D_FF:dff0|q'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.958 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 0.500        ; 0.829      ; 0.657      ;
+; 1.458 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 1.000        ; 0.829      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'T_FF:tff1|D_FF:dff0|q'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 2.253 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 0.500        ; 2.124      ; 0.657      ;
+; 2.753 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 1.000        ; 2.124      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                              ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; 2.485 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; 0.500        ; 2.356      ; 0.657      ;
+; 2.985 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; 1.000        ; 2.356      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; -2.215 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; 0.000        ; 2.356      ; 0.657      ;
+; -1.715 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; -0.500       ; 2.356      ; 0.657      ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'T_FF:tff1|D_FF:dff0|q'                                                                                                        ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -1.983 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 0.000        ; 2.124      ; 0.657      ;
+; -1.483 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; -0.500       ; 2.124      ; 0.657      ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'T_FF:tffo|D_FF:dff0|q'                                                                                                        ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -0.688 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 0.000        ; 0.829      ; 0.657      ;
+; -0.188 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; -0.500       ; 0.829      ; 0.657      ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'T_FF:tff2|D_FF:dff0|q'                                                                                                       ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.391 ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; 0.000        ; 0.000      ; 0.657      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; clk   ; Rise       ; clk                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; tffo|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; tffo|dff0|q|clk       ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'T_FF:tff1|D_FF:dff0|q'                                                                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; T_FF:tff1|D_FF:dff0|q ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; T_FF:tff1|D_FF:dff0|q ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff1|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff1|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff2|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff2|dff0|q|clk       ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'T_FF:tff2|D_FF:dff0|q'                                                                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; T_FF:tff2|D_FF:dff0|q ; Fall       ; T_FF:tff3|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; T_FF:tff2|D_FF:dff0|q ; Fall       ; T_FF:tff3|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff2|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff2|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff3|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff3|dff0|q|clk       ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'T_FF:tffo|D_FF:dff0|q'                                                                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; T_FF:tffo|D_FF:dff0|q ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; T_FF:tffo|D_FF:dff0|q ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tff1|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tff1|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tffo|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tffo|dff0|q|regout    ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ; 4.184 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ; 4.184 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ;       ; 4.184 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ;       ; 4.184 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 3.807 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ; 3.807 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 5.127 ; 5.127 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ;       ; 3.807 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[3]     ; T_FF:tff2|D_FF:dff0|q ; 5.127 ; 5.127 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ; 4.055 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ; 4.055 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ;       ; 4.055 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ;       ; 4.055 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ; 4.184 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ; 4.184 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ;       ; 4.184 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ;       ; 4.184 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 3.807 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ; 3.807 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 5.127 ; 3.807 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ;       ; 3.807 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[3]     ; T_FF:tff2|D_FF:dff0|q ; 5.127 ; 5.127 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ; 4.055 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ; 4.055 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ;       ; 4.055 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ;       ; 4.055 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-----------------------------------------------+
+; Fast Model Setup Summary                      ;
++-----------------------+-------+---------------+
+; Clock                 ; Slack ; End Point TNS ;
++-----------------------+-------+---------------+
+; T_FF:tff2|D_FF:dff0|q ; 0.665 ; 0.000         ;
+; T_FF:tffo|D_FF:dff0|q ; 0.776 ; 0.000         ;
+; T_FF:tff1|D_FF:dff0|q ; 1.391 ; 0.000         ;
+; clk                   ; 1.600 ; 0.000         ;
++-----------------------+-------+---------------+
+
+
++------------------------------------------------+
+; Fast Model Hold Summary                        ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -1.220 ; -1.220        ;
+; T_FF:tff1|D_FF:dff0|q ; -1.011 ; -1.011        ;
+; T_FF:tffo|D_FF:dff0|q ; -0.396 ; -0.396        ;
+; T_FF:tff2|D_FF:dff0|q ; 0.215  ; 0.000         ;
++-----------------------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary         ;
++-----------------------+--------+---------------+
+; Clock                 ; Slack  ; End Point TNS ;
++-----------------------+--------+---------------+
+; clk                   ; -1.222 ; -2.222        ;
+; T_FF:tff1|D_FF:dff0|q ; -0.500 ; -1.000        ;
+; T_FF:tff2|D_FF:dff0|q ; -0.500 ; -1.000        ;
+; T_FF:tffo|D_FF:dff0|q ; -0.500 ; -1.000        ;
++-----------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'T_FF:tff2|D_FF:dff0|q'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.665 ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; 1.000        ; 0.000      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'T_FF:tffo|D_FF:dff0|q'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.776 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 0.500        ; 0.470      ; 0.367      ;
+; 1.276 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 1.000        ; 0.470      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'T_FF:tff1|D_FF:dff0|q'                                                                                                      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 1.391 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 0.500        ; 1.085      ; 0.367      ;
+; 1.891 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 1.000        ; 1.085      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                              ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; 1.600 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; 0.500        ; 1.294      ; 0.367      ;
+; 2.100 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; 1.000        ; 1.294      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+; -1.220 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; 0.000        ; 1.294      ; 0.367      ;
+; -0.720 ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; clk         ; -0.500       ; 1.294      ; 0.367      ;
++--------+-----------------------+-----------------------+-----------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'T_FF:tff1|D_FF:dff0|q'                                                                                                        ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -1.011 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 0.000        ; 1.085      ; 0.367      ;
+; -0.511 ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; -0.500       ; 1.085      ; 0.367      ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'T_FF:tffo|D_FF:dff0|q'                                                                                                        ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack  ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; -0.396 ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 0.000        ; 0.470      ; 0.367      ;
+; 0.104  ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; -0.500       ; 0.470      ; 0.367      ;
++--------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'T_FF:tff2|D_FF:dff0|q'                                                                                                       ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; Slack ; From Node             ; To Node               ; Launch Clock          ; Latch Clock           ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+; 0.215 ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff3|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; 0.000        ; 0.000      ; 0.367      ;
++-------+-----------------------+-----------------------+-----------------------+-----------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; clk   ; Rise       ; clk                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; tffo|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; tffo|dff0|q|clk       ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'T_FF:tff1|D_FF:dff0|q'                                                                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; T_FF:tff1|D_FF:dff0|q ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; T_FF:tff1|D_FF:dff0|q ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff1|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff1|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff2|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff1|D_FF:dff0|q ; Rise       ; tff2|dff0|q|clk       ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'T_FF:tff2|D_FF:dff0|q'                                                                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; T_FF:tff2|D_FF:dff0|q ; Fall       ; T_FF:tff3|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; T_FF:tff2|D_FF:dff0|q ; Fall       ; T_FF:tff3|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff2|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff2|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff3|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tff2|D_FF:dff0|q ; Rise       ; tff3|dff0|q|clk       ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'T_FF:tffo|D_FF:dff0|q'                                                                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                 ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; T_FF:tffo|D_FF:dff0|q ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; T_FF:tffo|D_FF:dff0|q ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tff1|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tff1|dff0|q|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tffo|dff0|q|regout    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; T_FF:tffo|D_FF:dff0|q ; Rise       ; tffo|dff0|q|regout    ;
++--------+--------------+----------------+------------------+-----------------------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ; 2.192 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ; 2.192 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ;       ; 2.192 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ;       ; 2.192 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 2.037 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ; 2.037 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 2.698 ; 2.698 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ;       ; 2.037 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[3]     ; T_FF:tff2|D_FF:dff0|q ; 2.698 ; 2.698 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ; 2.077 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ; 2.077 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ;       ; 2.077 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ;       ; 2.077 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ; 2.192 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ; 2.192 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ;       ; 2.192 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ;       ; 2.192 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 2.037 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ; 2.037 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 2.698 ; 2.037 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ;       ; 2.037 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[3]     ; T_FF:tff2|D_FF:dff0|q ; 2.698 ; 2.698 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ; 2.077 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ; 2.077 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ;       ; 2.077 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ;       ; 2.077 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                ;
++------------------------+-------+--------+----------+---------+---------------------+
+; Clock                  ; Setup ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------+-------+--------+----------+---------+---------------------+
+; Worst-case Slack       ; 0.379 ; -2.215 ; N/A      ; N/A     ; -1.222              ;
+;  T_FF:tff1|D_FF:dff0|q ; 1.391 ; -1.983 ; N/A      ; N/A     ; -0.500              ;
+;  T_FF:tff2|D_FF:dff0|q ; 0.379 ; 0.215  ; N/A      ; N/A     ; -0.500              ;
+;  T_FF:tffo|D_FF:dff0|q ; 0.776 ; -0.688 ; N/A      ; N/A     ; -0.500              ;
+;  clk                   ; 1.600 ; -2.215 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS        ; 0.0   ; -4.886 ; 0.0      ; 0.0     ; -5.222              ;
+;  T_FF:tff1|D_FF:dff0|q ; 0.000 ; -1.983 ; N/A      ; N/A     ; -1.000              ;
+;  T_FF:tff2|D_FF:dff0|q ; 0.000 ; 0.000  ; N/A      ; N/A     ; -1.000              ;
+;  T_FF:tffo|D_FF:dff0|q ; 0.000 ; -0.688 ; N/A      ; N/A     ; -1.000              ;
+;  clk                   ; 0.000 ; -2.215 ; N/A      ; N/A     ; -2.222              ;
++------------------------+-------+--------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                  ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ; 4.184 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ; 4.184 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ;       ; 4.184 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ;       ; 4.184 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 3.807 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ; 3.807 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 5.127 ; 5.127 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ;       ; 3.807 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[3]     ; T_FF:tff2|D_FF:dff0|q ; 5.127 ; 5.127 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ; 4.055 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ; 4.055 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ;       ; 4.055 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ;       ; 4.055 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                          ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; Data Port ; Clock Port            ; Rise  ; Fall  ; Clock Edge ; Clock Reference       ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ; 2.192 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ; 2.192 ;       ; Rise       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff1|D_FF:dff0|q ;       ; 2.192 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+;  q[1]     ; T_FF:tff1|D_FF:dff0|q ;       ; 2.192 ; Fall       ; T_FF:tff1|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 2.037 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ; 2.037 ;       ; Rise       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tff2|D_FF:dff0|q ; 2.698 ; 2.037 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[2]     ; T_FF:tff2|D_FF:dff0|q ;       ; 2.037 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+;  q[3]     ; T_FF:tff2|D_FF:dff0|q ; 2.698 ; 2.698 ; Fall       ; T_FF:tff2|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ; 2.077 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ; 2.077 ;       ; Rise       ; T_FF:tffo|D_FF:dff0|q ;
+; q[*]      ; T_FF:tffo|D_FF:dff0|q ;       ; 2.077 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
+;  q[0]     ; T_FF:tffo|D_FF:dff0|q ;       ; 2.077 ; Fall       ; T_FF:tffo|D_FF:dff0|q ;
++-----------+-----------------------+-------+-------+------------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                           ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; T_FF:tffo|D_FF:dff0|q ; clk                   ; 0        ; 0        ; 1        ; 1        ;
+; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 0        ; 0        ; 1        ; 1        ;
+; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; 0        ; 0        ; 0        ; 1        ;
+; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 0        ; 0        ; 1        ; 1        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                            ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; From Clock            ; To Clock              ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+; T_FF:tffo|D_FF:dff0|q ; clk                   ; 0        ; 0        ; 1        ; 1        ;
+; T_FF:tff2|D_FF:dff0|q ; T_FF:tff1|D_FF:dff0|q ; 0        ; 0        ; 1        ; 1        ;
+; T_FF:tff2|D_FF:dff0|q ; T_FF:tff2|D_FF:dff0|q ; 0        ; 0        ; 0        ; 1        ;
+; T_FF:tff1|D_FF:dff0|q ; T_FF:tffo|D_FF:dff0|q ; 0        ; 0        ; 1        ; 1        ;
++-----------------------+-----------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 4     ; 4    ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 4     ; 4    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jan 29 11:32:22 2024
+Info: Command: quartus_sta RIPPLECOUNTER -c RIPPLECOUNTER
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'RIPPLECOUNTER.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name T_FF:tffo|D_FF:dff0|q T_FF:tffo|D_FF:dff0|q
+    Info (332105): create_clock -period 1.000 -name T_FF:tff1|D_FF:dff0|q T_FF:tff1|D_FF:dff0|q
+    Info (332105): create_clock -period 1.000 -name T_FF:tff2|D_FF:dff0|q T_FF:tff2|D_FF:dff0|q
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 0.379
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.379         0.000 T_FF:tff2|D_FF:dff0|q 
+    Info (332119):     0.958         0.000 T_FF:tffo|D_FF:dff0|q 
+    Info (332119):     2.253         0.000 T_FF:tff1|D_FF:dff0|q 
+    Info (332119):     2.485         0.000 clk 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -2.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.215        -2.215 clk 
+    Info (332119):    -1.983        -1.983 T_FF:tff1|D_FF:dff0|q 
+    Info (332119):    -0.688        -0.688 T_FF:tffo|D_FF:dff0|q 
+    Info (332119):     0.391         0.000 T_FF:tff2|D_FF:dff0|q 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -2.222 clk 
+    Info (332119):    -0.500        -1.000 T_FF:tff1|D_FF:dff0|q 
+    Info (332119):    -0.500        -1.000 T_FF:tff2|D_FF:dff0|q 
+    Info (332119):    -0.500        -1.000 T_FF:tffo|D_FF:dff0|q 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.665
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.665         0.000 T_FF:tff2|D_FF:dff0|q 
+    Info (332119):     0.776         0.000 T_FF:tffo|D_FF:dff0|q 
+    Info (332119):     1.391         0.000 T_FF:tff1|D_FF:dff0|q 
+    Info (332119):     1.600         0.000 clk 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -1.220
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.220        -1.220 clk 
+    Info (332119):    -1.011        -1.011 T_FF:tff1|D_FF:dff0|q 
+    Info (332119):    -0.396        -0.396 T_FF:tffo|D_FF:dff0|q 
+    Info (332119):     0.215         0.000 T_FF:tff2|D_FF:dff0|q 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -2.222 clk 
+    Info (332119):    -0.500        -1.000 T_FF:tff1|D_FF:dff0|q 
+    Info (332119):    -0.500        -1.000 T_FF:tff2|D_FF:dff0|q 
+    Info (332119):    -0.500        -1.000 T_FF:tffo|D_FF:dff0|q 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4529 megabytes
+    Info: Processing ended: Mon Jan 29 11:32:24 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

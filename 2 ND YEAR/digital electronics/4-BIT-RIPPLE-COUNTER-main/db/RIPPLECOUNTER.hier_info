@@ -1,0 +1,61 @@
+|RIPPLECOUNTER
+q[0] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= T_FF:tff3.port0
+clk => clk.IN1
+reset => reset.IN4
+
+
+|RIPPLECOUNTER|T_FF:tffo
+q <= D_FF:dff0.port0
+clk => clk.IN1
+reset => reset.IN1
+
+
+|RIPPLECOUNTER|T_FF:tffo|D_FF:dff0
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+
+
+|RIPPLECOUNTER|T_FF:tff1
+q <= D_FF:dff0.port0
+clk => clk.IN1
+reset => reset.IN1
+
+
+|RIPPLECOUNTER|T_FF:tff1|D_FF:dff0
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+
+
+|RIPPLECOUNTER|T_FF:tff2
+q <= D_FF:dff0.port0
+clk => clk.IN1
+reset => reset.IN1
+
+
+|RIPPLECOUNTER|T_FF:tff2|D_FF:dff0
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+
+
+|RIPPLECOUNTER|T_FF:tff3
+q <= D_FF:dff0.port0
+clk => clk.IN1
+reset => reset.IN1
+
+
+|RIPPLECOUNTER|T_FF:tff3|D_FF:dff0
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+
+

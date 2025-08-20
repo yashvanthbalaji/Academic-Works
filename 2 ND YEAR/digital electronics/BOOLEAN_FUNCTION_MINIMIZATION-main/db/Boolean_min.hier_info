@@ -1,0 +1,19 @@
+|Boolean_min
+a => WideAnd1.IN0
+a => WideAnd0.IN0
+b => WideAnd0.IN1
+b => WideAnd1.IN1
+b => p.IN0
+c => WideAnd1.IN2
+d => WideAnd0.IN2
+d => p.IN1
+w => u.IN0
+x => t.IN0
+y => t.IN1
+y => u.IN1
+y => s.IN0
+z => s.IN1
+f1 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+
+

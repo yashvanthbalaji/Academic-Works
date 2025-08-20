@@ -1,0 +1,17 @@
+|JKFLIPFLOPUSINGIFELSE
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb <= qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+j => always0.IN0
+j => always0.IN0
+j => q.DATAB
+j => always0.IN0
+k => always0.IN1
+k => always0.IN1
+k => qb.DATAB
+k => always0.IN1
+clock => qb~reg0.CLK
+clock => q~reg0.CLK
+reset => qb~reg0.ENA
+reset => q~reg0.ENA
+
+

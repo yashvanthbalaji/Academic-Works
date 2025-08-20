@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus II\TFLIPFLOP\simulation\qsim
+vTFLIPFLOPPOSEDGE
+Z1 IYH;8lnIVnA7Cd@^@^;BoE1
+Z2 V<oeO0h;P1]oY;V3lhTZ<<2
+Z3 dE:\Quartus II\TFLIPFLOP\simulation\qsim
+Z4 w1706163790
+Z5 8TFLIPFLOPPOSEDGE.vo
+Z6 FTFLIPFLOPPOSEDGE.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@t@f@l@i@p@f@l@o@p@p@o@s@e@d@g@e
+!i10b 1
+Z10 !s100 6moM8BgJN3mLezQYWdP9_3
+!s85 0
+Z11 !s108 1706163791.932000
+Z12 !s107 TFLIPFLOPPOSEDGE.vo|
+Z13 !s90 -work|work|TFLIPFLOPPOSEDGE.vo|
+!s101 -O0
+vTFLIPFLOPPOSEDGE_vlg_check_tst
+!i10b 1
+!s100 DC8OFl^9@mYA`78AM710V2
+Ini7=kDE6?B<BfibLn`SLX3
+VLMzk6[fhcJ__YZ8Q2oI1M0
+R3
+Z14 w1706163789
+Z15 8TFLIPFLOPPOSEDGE.vt
+Z16 FTFLIPFLOPPOSEDGE.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1706163792.042000
+Z18 !s107 TFLIPFLOPPOSEDGE.vt|
+Z19 !s90 -work|work|TFLIPFLOPPOSEDGE.vt|
+!s101 -O0
+R8
+n@t@f@l@i@p@f@l@o@p@p@o@s@e@d@g@e_vlg_check_tst
+vTFLIPFLOPPOSEDGE_vlg_sample_tst
+!i10b 1
+!s100 6AcZkmlUdHhBiZdG?n=oF2
+I^;RUzdgmQO]kjn5;@[K8d2
+VQ84gOFz5@4o=<QTVUG@Sg1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@t@f@l@i@p@f@l@o@p@p@o@s@e@d@g@e_vlg_sample_tst
+vTFLIPFLOPPOSEDGE_vlg_vec_tst
+!i10b 1
+!s100 Hdii>5;1;GHG=o7Oo`Q9L3
+IHBR=d]40_XA4YiClLSR5O3
+Vk0GT5z0>Ahno6J>Eh_=AN1
+R3
+R14
+R15
+R16
+L0 183
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@t@f@l@i@p@f@l@o@p@p@o@s@e@d@g@e_vlg_vec_tst

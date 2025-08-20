@@ -1,0 +1,8 @@
+|TFLIPFLOPPOSEDGE
+clk => q~reg0.CLK
+rst_n => q.OUTPUTSELECT
+t => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

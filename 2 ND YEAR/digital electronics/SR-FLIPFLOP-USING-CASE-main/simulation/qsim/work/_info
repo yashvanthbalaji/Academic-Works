@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus II\SRFLIPFLOPUSINGCASE\simulation\qsim
+vSRFLIPFLOPUSINGCASE
+Z1 ID_4XPCefe>fRM`YOCzoBK2
+Z2 VKgmnMCA@<F7P[>`SYR`L>3
+Z3 dE:\Quartus II\SRFLIPFLOPUSINGCASE\simulation\qsim
+Z4 w1706091276
+Z5 8SRFLIPFLOPUSINGCASE.vo
+Z6 FSRFLIPFLOPUSINGCASE.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@s@r@f@l@i@p@f@l@o@p@u@s@i@n@g@c@a@s@e
+!i10b 1
+Z10 !s100 kmSWAB_e=3hQ_WY4z0Q<H3
+!s85 0
+Z11 !s108 1706091277.866000
+Z12 !s107 SRFLIPFLOPUSINGCASE.vo|
+Z13 !s90 -work|work|SRFLIPFLOPUSINGCASE.vo|
+!s101 -O0
+vSRFLIPFLOPUSINGCASE_vlg_check_tst
+!i10b 1
+!s100 3O0Ya0@CPAgYz`8O@7:C92
+I>U=kCQzmIkR6M74]DmBY93
+VNEKfzELKm[hTKnSLzNz9i1
+R3
+Z14 w1706091275
+Z15 8SRFLIPFLOPUSINGCASE.vt
+Z16 FSRFLIPFLOPUSINGCASE.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1706091277.986000
+Z18 !s107 SRFLIPFLOPUSINGCASE.vt|
+Z19 !s90 -work|work|SRFLIPFLOPUSINGCASE.vt|
+!s101 -O0
+R8
+n@s@r@f@l@i@p@f@l@o@p@u@s@i@n@g@c@a@s@e_vlg_check_tst
+vSRFLIPFLOPUSINGCASE_vlg_sample_tst
+!i10b 1
+!s100 XEiNO>eNnHdK8cJ]95IgJ2
+IIIgBK0^@04;AjPdCdTTK@2
+V6=5RY>4VRHPKn1DW2@X^<0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@s@r@f@l@i@p@f@l@o@p@u@s@i@n@g@c@a@s@e_vlg_sample_tst
+vSRFLIPFLOPUSINGCASE_vlg_vec_tst
+!i10b 1
+!s100 9^a`h;ZZTTodE2GCN_AzF0
+IWb`LCH;U1=UjoDdA_cOn=2
+VLLJCDKfGD]iE9g7UV9AeM2
+R3
+R14
+R15
+R16
+L0 185
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@s@r@f@l@i@p@f@l@o@p@u@s@i@n@g@c@a@s@e_vlg_vec_tst

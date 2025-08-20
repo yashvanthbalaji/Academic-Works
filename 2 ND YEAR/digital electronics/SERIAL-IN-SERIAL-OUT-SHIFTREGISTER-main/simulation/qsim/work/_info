@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus II\SISOSR\simulation\qsim
+vSISOSR
+Z1 !s100 S2d4mZM=W`915Z6<3jAec0
+Z2 I7Pb>;7;2lF?J;bS=KMTG;2
+Z3 VYfBbb5MZ^n=mDod;dcmHi2
+Z4 dE:\Quartus II\SISOSR\simulation\qsim
+Z5 w1706172913
+Z6 8SISOSR.vo
+Z7 FSISOSR.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|SISOSR.vo|
+Z10 o-work work -O0
+Z11 n@s@i@s@o@s@r
+!i10b 1
+!s85 0
+Z12 !s108 1706172914.685000
+Z13 !s107 SISOSR.vo|
+!s101 -O0
+vSISOSR_vlg_check_tst
+!i10b 1
+Z14 !s100 hg=3@XYl3aQNNjnfk<5a11
+Z15 IYiACm[c6k1e2oNJCoTofV3
+Z16 Vj05?e2kf4Sb7;7U[R6RY:1
+R4
+Z17 w1706172912
+Z18 8SISOSR.vt
+Z19 FSISOSR.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1706172914.793000
+Z21 !s107 SISOSR.vt|
+Z22 !s90 -work|work|SISOSR.vt|
+!s101 -O0
+R10
+Z23 n@s@i@s@o@s@r_vlg_check_tst
+vSISOSR_vlg_sample_tst
+!i10b 1
+Z24 !s100 f=QHg@39G`YaMDa8F]E[n0
+Z25 IJGGbI0I:nTIlIoZ1eR6Rk1
+Z26 VY_gKKNkB?A7z73g7HZo>U1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@s@i@s@o@s@r_vlg_sample_tst
+vSISOSR_vlg_vec_tst
+!i10b 1
+!s100 kVHNO]KG0P]<5P0D;97?P3
+IUXVSMVkj4;J9fbXNReSkQ3
+Z28 VPOonE33DhM`MC0Zd[zcQP2
+R4
+R17
+R18
+R19
+Z29 L0 156
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@s@i@s@o@s@r_vlg_vec_tst

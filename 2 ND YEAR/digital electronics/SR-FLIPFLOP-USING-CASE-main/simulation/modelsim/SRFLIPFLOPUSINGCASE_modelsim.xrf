@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, E:/Quartus II/SRFLIPFLOPUSINGCASE/SRFLIPFLOPUSINGCASE.v
+source_file = 1, E:/Quartus II/SRFLIPFLOPUSINGCASE/Waveform.vwf
+source_file = 1, E:/Quartus II/SRFLIPFLOPUSINGCASE/db/SRFLIPFLOPUSINGCASE.cbx.xml
+design_name = SRFLIPFLOPUSINGCASE
+instance = comp, \s~I , s, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \clk~I , clk, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \reset~I , reset, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \r~I , r, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \q~0 , q~0, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \q~reg0 , q~reg0, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \q~I , q, SRFLIPFLOPUSINGCASE, 1
+instance = comp, \q_bar~I , q_bar, SRFLIPFLOPUSINGCASE, 1

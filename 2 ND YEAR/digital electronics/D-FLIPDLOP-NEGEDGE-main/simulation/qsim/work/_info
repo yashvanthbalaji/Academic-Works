@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus II\DFLIPFLOP\simulation\qsim
+vDFLIPFLOPNEGEDGE
+Z1 !s100 FZ^>:09^Fb490K1j]]zgY3
+Z2 I8G[1<ajTTm]UYKb_PG12n1
+Z3 VA:9191<iTX0]ThMOk99gE2
+Z4 dE:\Quartus II\DFLIPFLOP\simulation\qsim
+Z5 w1706161241
+Z6 8DFLIPFLOPNEGEDGE.vo
+Z7 FDFLIPFLOPNEGEDGE.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|DFLIPFLOPNEGEDGE.vo|
+Z10 o-work work -O0
+Z11 n@d@f@l@i@p@f@l@o@p@n@e@g@e@d@g@e
+!i10b 1
+!s85 0
+Z12 !s108 1706161242.555000
+Z13 !s107 DFLIPFLOPNEGEDGE.vo|
+!s101 -O0
+vDFLIPFLOPNEGEDGE_vlg_check_tst
+!i10b 1
+Z14 !s100 nfaGKG2G>M_3V>gM49]e@0
+Z15 I5iL1PGB4MXT9hYNoa_ci_3
+Z16 VS;kPUBa>RI`H1lUMm4kkg2
+R4
+Z17 w1706161240
+Z18 8DFLIPFLOPNEGEDGE.vt
+Z19 FDFLIPFLOPNEGEDGE.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1706161242.662000
+Z21 !s107 DFLIPFLOPNEGEDGE.vt|
+Z22 !s90 -work|work|DFLIPFLOPNEGEDGE.vt|
+!s101 -O0
+R10
+Z23 n@d@f@l@i@p@f@l@o@p@n@e@g@e@d@g@e_vlg_check_tst
+vDFLIPFLOPNEGEDGE_vlg_sample_tst
+!i10b 1
+Z24 !s100 63mdMleDRnZ;SdibI_4j[2
+Z25 Ie@e]ohT?e`U<SBnS_ooFl2
+Z26 Vf6OIZSDl5W`94IQPHdWVE1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@d@f@l@i@p@f@l@o@p@n@e@g@e@d@g@e_vlg_sample_tst
+vDFLIPFLOPNEGEDGE_vlg_vec_tst
+!i10b 1
+!s100 G8TcoCW1QcE??RLRfUf;l1
+I2iVZ;gTTZR^f^iG0^_?2j3
+Z28 VPo9U6Ua2[1?ESCFba6J<g2
+R4
+R17
+R18
+R19
+Z29 L0 181
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@d@f@l@i@p@f@l@o@p@n@e@g@e@d@g@e_vlg_vec_tst

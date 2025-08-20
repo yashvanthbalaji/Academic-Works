@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, E:/Quartus II/DFLIPFLOP/DFLIPFLOPNEGEDGE.v
+source_file = 1, E:/Quartus II/DFLIPFLOP/Waveform.vwf
+source_file = 1, E:/Quartus II/DFLIPFLOP/Waveform1.vwf
+source_file = 1, E:/Quartus II/DFLIPFLOP/db/DFLIPFLOPNEGEDGE.cbx.xml
+design_name = DFLIPFLOPNEGEDGE
+instance = comp, \Clock~I , Clock, DFLIPFLOPNEGEDGE, 1
+instance = comp, \Clock~clkctrl , Clock~clkctrl, DFLIPFLOPNEGEDGE, 1
+instance = comp, \D~I , D, DFLIPFLOPNEGEDGE, 1
+instance = comp, \Q~reg0 , Q~reg0, DFLIPFLOPNEGEDGE, 1
+instance = comp, \Qbar~0 , Qbar~0, DFLIPFLOPNEGEDGE, 1
+instance = comp, \Qbar~reg0 , Qbar~reg0, DFLIPFLOPNEGEDGE, 1
+instance = comp, \Q~I , Q, DFLIPFLOPNEGEDGE, 1
+instance = comp, \Qbar~I , Qbar, DFLIPFLOPNEGEDGE, 1

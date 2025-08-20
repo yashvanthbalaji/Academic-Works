@@ -1,0 +1,26 @@
+# do FULL_addsub.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FULL_addsub
+# 
+# Top level modules:
+# 	FULL_addsub
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FULL_addsub_vlg_sample_tst
+# -- Compiling module FULL_addsub_vlg_check_tst
+# -- Compiling module FULL_addsub_vlg_vec_tst
+# 
+# Top level modules:
+# 	FULL_addsub_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.FULL_addsub_vlg_vec_tst 
+# Loading work.FULL_addsub_vlg_vec_tst
+# Loading work.FULL_addsub
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading work.FULL_addsub_vlg_sample_tst
+# Loading work.FULL_addsub_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Simulation passed !
+# ** Note: $finish    : FULL_addsub.vt(233)
+#    Time: 200 ns  Iteration: 0  Instance: /FULL_addsub_vlg_vec_tst/tb_out

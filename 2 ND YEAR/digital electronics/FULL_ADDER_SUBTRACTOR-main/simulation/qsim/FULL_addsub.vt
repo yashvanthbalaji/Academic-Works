@@ -1,0 +1,310 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/24/2024 10:52:37"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    FULL_addsub
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module FULL_addsub_vlg_sample_tst(
+	a,
+	b,
+	cin,
+	sampler_tx
+);
+input  a;
+input  b;
+input  cin;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(a or b or cin)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module FULL_addsub_vlg_check_tst (
+	BO,
+	DIFF,
+	carry,
+	sum,
+	sampler_rx
+);
+input  BO;
+input  DIFF;
+input  carry;
+input  sum;
+input sampler_rx;
+
+reg  BO_expected;
+reg  DIFF_expected;
+reg  carry_expected;
+reg  sum_expected;
+
+reg  BO_prev;
+reg  DIFF_prev;
+reg  carry_prev;
+reg  sum_prev;
+
+reg  BO_expected_prev;
+reg  DIFF_expected_prev;
+reg  carry_expected_prev;
+reg  sum_expected_prev;
+
+reg  last_BO_exp;
+reg  last_DIFF_exp;
+reg  last_carry_exp;
+reg  last_sum_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:4] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 4'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	BO_prev = BO;
+	DIFF_prev = DIFF;
+	carry_prev = carry;
+	sum_prev = sum;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	BO_expected_prev = BO_expected;
+	DIFF_expected_prev = DIFF_expected;
+	carry_expected_prev = carry_expected;
+	sum_expected_prev = sum_expected;
+end
+
+
+
+// expected sum
+initial
+begin
+	sum_expected = 1'bX;
+end 
+
+// expected carry
+initial
+begin
+	carry_expected = 1'bX;
+end 
+
+// expected DIFF
+initial
+begin
+	DIFF_expected = 1'bX;
+end 
+
+// expected BO
+initial
+begin
+	BO_expected = 1'bX;
+end 
+// generate trigger
+always @(BO_expected or BO or DIFF_expected or DIFF or carry_expected or carry or sum_expected or sum)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected BO = %b | expected DIFF = %b | expected carry = %b | expected sum = %b | ",BO_expected_prev,DIFF_expected_prev,carry_expected_prev,sum_expected_prev);
+	$display("| real BO = %b | real DIFF = %b | real carry = %b | real sum = %b | ",BO_prev,DIFF_prev,carry_prev,sum_prev);
+`endif
+	if (
+		( BO_expected_prev !== 1'bx ) && ( BO_prev !== BO_expected_prev )
+		&& ((BO_expected_prev !== last_BO_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port BO :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", BO_expected_prev);
+		$display ("     Real value = %b", BO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_BO_exp = BO_expected_prev;
+	end
+	if (
+		( DIFF_expected_prev !== 1'bx ) && ( DIFF_prev !== DIFF_expected_prev )
+		&& ((DIFF_expected_prev !== last_DIFF_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port DIFF :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", DIFF_expected_prev);
+		$display ("     Real value = %b", DIFF_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_DIFF_exp = DIFF_expected_prev;
+	end
+	if (
+		( carry_expected_prev !== 1'bx ) && ( carry_prev !== carry_expected_prev )
+		&& ((carry_expected_prev !== last_carry_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port carry :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", carry_expected_prev);
+		$display ("     Real value = %b", carry_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_carry_exp = carry_expected_prev;
+	end
+	if (
+		( sum_expected_prev !== 1'bx ) && ( sum_prev !== sum_expected_prev )
+		&& ((sum_expected_prev !== last_sum_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port sum :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", sum_expected_prev);
+		$display ("     Real value = %b", sum_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_sum_exp = sum_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#200000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module FULL_addsub_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg a;
+reg b;
+reg cin;
+// wires                                               
+wire BO;
+wire DIFF;
+wire carry;
+wire sum;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+FULL_addsub i1 (
+// port map - connection between master ports and signals/registers   
+	.BO(BO),
+	.DIFF(DIFF),
+	.a(a),
+	.b(b),
+	.carry(carry),
+	.cin(cin),
+	.sum(sum)
+);
+
+// a
+initial
+begin
+	a = 1'b0;
+	a = #40000 1'b1;
+	a = #40000 1'b0;
+end 
+
+// b
+initial
+begin
+	b = 1'b0;
+	b = #20000 1'b1;
+	b = #20000 1'b0;
+	b = #20000 1'b1;
+	b = #20000 1'b0;
+end 
+
+// cin
+initial
+begin
+	cin = 1'b0;
+	cin = #10000 1'b1;
+	cin = #10000 1'b0;
+	cin = #10000 1'b1;
+	cin = #10000 1'b0;
+	cin = #10000 1'b1;
+	cin = #10000 1'b0;
+	cin = #10000 1'b1;
+	cin = #10000 1'b0;
+end 
+
+FULL_addsub_vlg_sample_tst tb_sample (
+	.a(a),
+	.b(b),
+	.cin(cin),
+	.sampler_tx(sampler)
+);
+
+FULL_addsub_vlg_check_tst tb_out(
+	.BO(BO),
+	.DIFF(DIFF),
+	.carry(carry),
+	.sum(sum),
+	.sampler_rx(sampler)
+);
+endmodule
+

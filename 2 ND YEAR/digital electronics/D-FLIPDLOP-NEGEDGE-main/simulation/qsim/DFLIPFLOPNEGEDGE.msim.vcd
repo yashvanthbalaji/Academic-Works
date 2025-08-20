@@ -1,0 +1,106 @@
+$comment
+	File created using the following command:
+		vcd file DFLIPFLOPNEGEDGE.msim.vcd -direction
+$end
+$date
+	Thu Jan 25 11:10:43 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module DFLIPFLOPNEGEDGE_vlg_vec_tst $end
+$var reg 1 ! Clock $end
+$var reg 1 " D $end
+$var wire 1 # Q $end
+$var wire 1 $ Qbar $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , Clock~combout $end
+$var wire 1 - Clock~clkctrl_outclk $end
+$var wire 1 . D~combout $end
+$var wire 1 / Q~reg0_regout $end
+$var wire 1 0 Qbar~0_combout $end
+$var wire 1 1 Qbar~reg0_regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+10
+01
+$end
+#20000
+1!
+1"
+1,
+1.
+1-
+0%
+00
+#40000
+0!
+0,
+0-
+1%
+1/
+1#
+#60000
+1!
+1,
+1-
+0%
+#80000
+0!
+0,
+0-
+1%
+#100000
+1!
+1,
+1-
+0%
+#120000
+0!
+0,
+0-
+1%
+#140000
+1!
+1,
+1-
+0%
+#160000
+0!
+0,
+0-
+1%
+#180000
+1!
+1,
+1-
+0%
+#200000
